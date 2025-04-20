@@ -51,7 +51,7 @@ function NoteForm({ onSubmit, onAddTag, availableTags }: NoteFormProps) {
                   setSelectedTags((prev) => [...prev, newTag]);
                 }}
                 value={selectedTags.map((tag) => {
-                  return { value: tag.id, label: tag.label };
+                  return { label: tag.label, value: tag.id };
                 })}
                 onChange={(tags) => {
                   setSelectedTags(
